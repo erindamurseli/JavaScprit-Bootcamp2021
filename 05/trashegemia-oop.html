@@ -11,7 +11,10 @@ constructor(card_type,amount)
 }
 
  withdraw(withdrawamount){
-    this.amount-=withdrawamount;
+     if(withdrawamount>this.amount)
+     throw "Je ka don me marr me shume pare se sa ke ne gjirollogari";
+    else
+     this.amount-=withdrawamount;
 }
 
 }
@@ -22,7 +25,11 @@ constructor(card_type,amount,provision){
     
 
 }
+
  withdraw(withdrawamount){
+    if(withdrawamount>this.amount)
+     throw "Je ka don me marr me shume pare se sa ke ne gjirollogari";
+    else
     this.amount-=(withdrawamount+this.provision);
 }
 
@@ -40,8 +47,12 @@ const cardteb=new TEB(["visa", "master"],500,5);
 console.log(cardteb.amount + "EURO");
 
 const amount=parseFloat(prompt("Amount:"));
+try{
 cardteb.withdraw (amount);
 
+}catch(e){
+alert(e);
+}
 document.write(cardteb.amount + "EURO");
 // console.log(cardteb.provision);
 
