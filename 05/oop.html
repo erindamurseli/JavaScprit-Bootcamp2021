@@ -1,12 +1,101 @@
 <script>
 
+// class Person{  //klasa eshte nje shabllon qe mundet me u vendos materiali ne te
+// //atribute
+
+// //sjellje(methods)
+// constructor(emri,mosha,ngjyra)
+// {
+//   console.log("Objekti u krijua") 
+//   this.e=emri; //ky konstruktor shkrepet ne momentin kur e krijojm nje objekt te ri
+//   this.m=mosha;
+//   this.n=ngjyra;
+// }
+
+
+// //objekte
+// //obj1
+// //obj2 etj
+// }
+
+// const obj1=new Person("Arta",24,"RED");
+
+// console.log(obj1.e)
+// console.log(obj1.m)
+// console.log(obj1.n)
+///////////////////////////////////////////
+
+//ose me vlera te paradefinuara
+// class Person{  //klasa eshte nje shabllon qe mundet me u vendos materiali ne te
+// //atribute
+// name="Artan"
+// constructor(name){
+//     this.name=name
+// }
+
+// }
+
+
+
+// const obj1=new Person("Arta",24,"RED");
+
+// console.log(obj1.name)
+// // console.log(obj1.m)
+// // console.log(obj1.n)
+////////////////////////////////////
+//sjelljet metodat class Person{  //klasa eshte nje shabllon qe mundet me u vendos materiali ne te
+//atribute
+
+
+
+// class Person{  //klasa eshte nje shabllon qe mundet me u vendos materiali ne te
+// //atribute
+// name="Artan"
+// constructor(name){//dy konstruktor ne js nuk pranohen brenda klases
+//     this.name=name
+// }
+
+// speak(){
+//     console.log("Hello World") //metoda bbrenda klases nuk kemi nevoj me function
+// }
+
+// }
+
+
+
+// const obj1=new Person("Arta",24,"RED");
+
+// console.log(obj1.name)
+// // console.log(obj1.m)
+// // console.log(obj1.n)
+// obj1.speak();
+
+
+///////////////////////////
+//tash per mos me pas nevoje qe pasi ta thirrim metoden me kriju objekt i perdorim klasat statike
+
 class Person{  //klasa eshte nje shabllon qe mundet me u vendos materiali ne te
+//atribute
+name="Artan"
+constructor(name){//dy konstruktor ne js nuk pranohen brenda klases
+    this.name=name
+}
+//ketu e thirrim klases statike
+static speak(){
+    console.log("Hello World") //metoda bbrenda klases nuk kemi nevoj me function
+}
 
 }
 
 
 
+const obj1=new Person("Arta",24,"RED");
 
+console.log(obj1.name)
+// console.log(obj1.m)
+// console.log(obj1.n)
+//ketu skemi nevoj  me thirr objektin obj1 por direkt emrin e kl
+Person.speak();
 
 
 
