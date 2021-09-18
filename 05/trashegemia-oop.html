@@ -1,0 +1,53 @@
+<script>
+
+
+
+class ATM{
+    
+constructor(card_type,amount)
+{
+    this.card_type=card_type;
+    this.amount=amount;
+}
+
+ withdraw(withdrawamount){
+    this.amount-=withdrawamount;
+}
+
+}
+class TEB extends ATM{
+constructor(card_type,amount,provision){
+    super(card_type,amount);//per mos me shkrujt dy her te njejtin konstruktor e perdorim super fjalen
+    this.provision=provision;
+    
+
+}
+ withdraw(withdrawamount){
+    this.amount-=(withdrawamount+this.provision);
+}
+
+static prntwelcome(){
+    document.write("Welcome to TEB <br/>");
+}
+
+}
+class BKT extends ATM{
+
+}
+TEB.prntwelcome();
+const cardteb=new TEB(["visa", "master"],500,5);
+
+console.log(cardteb.amount + "EURO");
+
+const amount=parseFloat(prompt("Amount:"));
+cardteb.withdraw (amount);
+
+document.write(cardteb.amount + "EURO");
+// console.log(cardteb.provision);
+
+
+
+
+
+
+</script>
