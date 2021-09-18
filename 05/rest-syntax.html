@@ -1,0 +1,36 @@
+<script>
+
+// const numbers=[1,2,3,4,5];
+// console.log([numbers,6,7,8,9,0])
+
+
+// ....spred sintaxa 
+// const numbers=[1,2,3,4,5];
+// console.log([...numbers,6,7,8,9,0])
+
+//rest parameters
+// function sum(x,y,z,...elements)
+// {
+//     console.log(x,y,z);
+//     console.log(elements)
+// }
+// sum(100,20,23,200,233,233)
+
+
+///////////
+
+function sum(...elements){//...elements kjo duhet me qene e fundit perndryshe gjun error
+ 
+return elements.reduce(
+     (a,i)=> a+i,
+     0
+ )}
+
+console.log ( sum(100,20,23,200,233,233));
+
+
+
+
+
+
+</script>

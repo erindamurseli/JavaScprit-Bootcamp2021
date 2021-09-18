@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Block scope var jo, let edhe const po  -->
+<script>
+
+// vetem var, nuk eshte i izoluar brendda kodit e kto tjerat po kto tjerat qesin error e bllokojn
+{
+    var x=20;
+  console.log(x);
+
+}
+{
+    var x=90;
+  console.log(x);
+
+}
+console.log(x); //kjo ne bllokun e fundit lexohet globalishtt gs
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

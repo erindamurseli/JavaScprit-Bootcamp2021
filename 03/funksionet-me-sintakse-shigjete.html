@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+(x=>console.log(x))(23);
+
+// ose 
+(function f(x)
+{
+    console.log(x);
+})(222);
+
+const printX=x=>console.log(x);
+
+const printY=function(y){
+    console.log(y);
+};
+printX(3444);
+printY(333);
+
+
+
+function fullname(name,surname){
+    console.log(name+""+surname);
+}
+fullname("Erinda",  " Murseli")
+
+
+// me sintaksen shigjete 
+(name,surname) //nese kemi ma shume se nje argument duhet me mbeshtjell me kllapa 
+
+let fullname=(name,surname) => console.log(name+""+surname);
+
+fullname("Erinda",  " Murseli")
+
+let  fullname=(name,surname)=>  {console.log(name+""+surname);console.log("test");};
+
+fullname("Erinda",  " Murseli")
+
+
+let plus=(x,y)=>x+y;
+console.log(plus(7,5))
+
+
+let prodhimi=(x,y)=>x*y;
+console.log(prodhimi(7,5))
+
+
+function faktoriel(x){
+    let p=1;
+    for(let i=1; i<=x; i++)
+    p=p*i;
+    return p;
+
+}
+console.log(faktoriel(5));
+console.log(faktoriel(3));
+
+
+const faktorieli=x=>
+{
+    let p=1;
+    for(let i=1; i<=x; i++)
+    p=p*i;
+    return p;
+
+
+}
+console.log(faktorieli(2));
+console.log(faktorieli(4));
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
