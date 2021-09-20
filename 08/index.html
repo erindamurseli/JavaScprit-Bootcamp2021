@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+       background-color:lightblue;
+    }
+#result{
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+}
+</style>
+<body>
+<!-- Detyra e pare ne JS -->
+
+<div id="result"></div>
+
+    <script>
+        const result=document.querySelector('#result');
+
+//onload
+window.onload=()=>{
+result.innerHTML=`${window.innerWidth},${window.innerHeight}`;
+
+};
+
+
+//onresize
+window.onresize=()=>{
+    result.innerHTML=`${window.innerWidth},${window.innerHeight}`;
+document.body.style.background=generateRandomColor();
+};
+
+const generateRandomColor=()=>{
+
+     r=Math.floor(Math.random()*255),
+     g=Math.floor(Math.random()*255),
+     b=Math.floor(Math.random()*255);
+
+     return `rgb(${r},${g},${b})`
+}
+    </script>
+</body>
+</html>
