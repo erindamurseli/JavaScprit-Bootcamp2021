@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav">
+        test
+    </div>
+<!-- <button onclick="alert('hello')">Say hello</button> -->
+
+<button id="btn">Say Hello</button>
+<!-- <button onclick="document.getElementById('nav').style.color= 'red'">Say hello</button> -->
+
+    <script>
+
+const btn=document.getElementById('btn');
+btn.addEventListener("click", function()
+{   
+    document.getElementById('nav').style.color= 'red'
+    document.getElementById('nav').style.fontSize= '20px';
+    
+}
+);
+btn.addEventListener("mouseover", function()
+{   
+//   console.log("Eventi siper butonit")
+btn.style.backgroundColor='red'
+}
+),
+btn.addEventListener("mouseout", function()
+{   
+//   console.log("Eventi siper butonit")
+btn.style.color='red'
+btn.style.backgroundColor='black'
+}
+)
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

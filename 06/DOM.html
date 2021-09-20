@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="nav">
+        <ul>
+            <li><a href=""></a>Home</li>
+            <li>    <a href="">About</a></li>
+            <li>  <a href="" class="last">Contact</a></li>
+        </ul>
+    </div>
+    <p id="title">hello world</p>
+    <script>
+        //.getElementById
+const nav=document.getElementById('nav');
+console.log(nav);
+
+
+//getElemenByTagName
+const anchor =document.getElementsByTagName('a')
+console.log(anchor.length);
+
+const anchorss =document.getElementsByClassName('last');
+console.log(anchorss)
+
+
+const a =document.getElementById('title');
+a.innerHTML="helllo:"
+a.style.color="red";
+a.setAttribute=('title', "this is a tooltip")
+
+
+    </script>
+</body>
+</html>

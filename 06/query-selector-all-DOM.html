@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="title2">hello world11</p>
+    <div id="nav">
+        <ul>
+            <li><a href=""></a>Home</li>
+            <li>    <a href="">About</a></li>
+            <li>  <a href="" class="last">Contact</a></li>
+        </ul>
+    </div>
+    <p id="title">hello worldsddddd</p>
+    <!-- queryselector ==>elementin e pare top to bottom
+    queryselector all==> -->
+    <noscript>
+        JA is disable
+    </noscript>
+
+
+    <script>
+        document.getElementById('title').remove()
+
+// console.log(document.querySelector('p'))
+// console.log(document.querySelectorAll('p'))
+
+
+const span=document.createElement('span');
+const span_text=document.createTextNode("Une jam span");
+span.appendChild(span_text)
+document.getElementById('nav').appendChild(span)
+    </script>
+</body>
+</html>

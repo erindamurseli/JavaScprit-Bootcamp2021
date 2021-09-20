@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            background-color: red;
+            padding:10px;
+        }
+        #one-p{
+            background-color: pink;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+ <div id="one">
+     <h1>Welcome here</h1>
+     <p id="one-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nam magnam minus voluptatem veritatis deleniti aliquid distinctio optio atque delectus, adipisci eaque iure iste magni velit repellat qui ex et?</p>
+ </div>
+ <div id="two">
+    <h1>Welcome here</h1>
+    <p id="two-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nam magnam minus voluptatem veritatis deleniti aliquid distinctio optio atque delectus, adipisci eaque iure iste magni velit repellat qui ex et?</p>
+</div>
+    <script>
+document.getElementById('one').addEventListener("click",()=>{
+alert('Div-p #one u klikua');
+},true) ; //false bubling nese eshte false  //true capturing
+document.getElementById('one-p').addEventListener("click",()=>{
+    alert('Div-p #one-p u klikua');
+},true)
+    </script>
+</body>
+</html>
