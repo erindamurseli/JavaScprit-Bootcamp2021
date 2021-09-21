@@ -1,0 +1,15 @@
+.error {
+  color: rgb(189, 35, 94);
+  display: none;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+button {
+  cursor: pointer;
+}
