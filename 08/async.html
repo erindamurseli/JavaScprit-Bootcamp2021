@@ -1,0 +1,24 @@
+<script>
+
+const devide=async(x,y)=>{
+        const result= new Promise((resolve, reject)=>{
+      if (y==0){
+reject("Y nuk mund te jete 0");
+return ;
+           }
+
+           //rregull
+          setTimeout(()=> resolve (x/y),2000);
+        });
+  
+
+document.write(await result);
+
+    };
+const x=prompt("X")
+console.log(x)
+
+    devide(10,0).catch(e=>document.write(e));
+document.write("end")
+
+</script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+</style>
+<body>
+
+<ul id="products">
+
+</ul>
+    <script>
+
+const products=[
+{name:"Coca Cola", price:1.20},
+{name:"Pepsi", price:1},
+// {name:"Coca Cola", price:1.20},
+// {name:"Coca Cola", price:1.20},
+
+];
+
+const addProduct=async(product)=>{
+
+return new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+
+    if(products.push(product))
+    resolve ("Produkti u shtua me sukses")
+    else
+    reject("Diqka shkoi keq")},2000);
+
+}); 
+
+
+
+};
+const displayProduct=()=>{
+    setTimeout(()=>{
+const products_ul=document.querySelector('#products');
+let result='';
+products.forEach((product,index)=>{
+    result+=`<li>${product.name}/${product.price}</li>`;
+
+
+});
+products_ul.innerHTML=result;
+},1000);
+
+};
+
+
+// addProduct({name:"A", price:2},displayProduct);
+addProduct({name:"A", price:2}).then(displayProduct)
+.catch(e=>console.log(e));
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<script>
+
+
+    const devide=(x,y)=>{
+        return new Promise((resolve, reject)=>{
+      if (y==0){
+reject("Y nuk mund te jete 0");
+return ;
+           }
+
+           //rregull
+           resolve (x/y);
+        });
+    }
+devide(10,0)
+.then(result=>document.write(result))
+.catch(error=>document.write(error))
+
+</script>
